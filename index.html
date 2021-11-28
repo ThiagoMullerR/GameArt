@@ -1,0 +1,254 @@
+<!--                            - INSTRUÇÕES ~ THIAGO -
+********************************************************************************************
+          Instruções básicas:
+
+          * Adicionar conteúdo na área dos ARTIGOS usando a tag <article>! *
+____________________________________________________________________________________________
+          -CORES
+          Para definir uma cor, criar classe com o nome da cor.
+          Ex:
+
+          <h1 class="verde">Título 1</h1>
+          <h2 class="rosa">Título 2</h2>
+
+          Cores disponíveis:
+            .rosa
+            .verde
+            .azul
+            .roxo
+            .rosa2
+            .vermelho
+            .laranja
+            .amarelo
+            .verde2
+            .ciano
+            .cinza
+            .cinzaEscuro
+            .anil
+            .verdeAzulado
+            .branco
+            .preto
+
+____________________________________________________________________________________________
+
+          -ALINHAMENTO VERTICAL
+          Para definir um artigo do lado do outro, criar div com a classe "vertical".
+          O article ESQUERDO deve vir sempre antes do DIREITO.
+          Os articles devem ter a classe "esquerda" e "direita". Ex:
+
+          <div class="vertical">
+            <article class="esquerda">
+              Lado esquerdo!
+            </article>
+
+            <article class="direita">
+              Lado direito!
+            </article>
+          </div>
+____________________________________________________________________________________________
+
+         -TESTAR - BORDA
+         Para saber onde estão as divs, articles e etc, basta criar uma classe "teste". Ex:
+
+         <article class="teste">
+          Olá mundo!
+         </article>
+
+         <div class="vertical teste">
+           <article class="esquerda teste">
+             Lado esquerdo!
+           </article>
+
+           <article class="direita teste">
+             Lado direito!
+           </article>
+         </div>
+
+____________________________________________________________________________________________
+
+         -EFEITOS AOS ~ FRAMEWORK
+         Ver instruções em:
+
+         http://michalsnik.github.io/aos/
+
+********************************************************************************************
+                                    GitHub:
+                    https://github.com/enricobguedes/unipsite
+
+                                  Site demo:
+                      https://game-art.000webhostapp.com/
+
+********************************************************************************************
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- Esta tag torna o site responsivo -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"> <!-- chamado do bootstrap -->
+    <link rel="stylesheet" href="css/style.css" type="text/css"> <!-- formatação pelo css -->
+    <link rel="stylesheet" href="css/aos.css" type="text/css">
+    <link rel="shortcut icon" type="image/png" href="imagens/favicon.png"/>
+    <title>Game Art - Início</title>
+  </head>
+  <body>
+    <header>
+
+    <!-- MENU Bootstrap -->
+    <!-- mais informações em: https://getbootstrap.com.br/docs/4.1/components/navs/ e
+         https://getbootstrap.com.br/docs/4.1/components/navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="menuBS">
+      <a class="navbar-brand nav nav-pills" href="index.html">
+        <img src="imagens/logo.png" class="d-inline-block align-top logo" alt="Game Art">
+      </a>
+      <!-- Conteúdo do navbar -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Início <span class="sr-only">(Página atual)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Jogos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="paginas/cyberpunk.html">CyberPunk 2077</a>
+            <a class="dropdown-item" href="paginas/skyrim.html">The Elder Scrolls V: Skyrim</a>
+            <a class="dropdown-item" href="paginas/gtav.html">Grand Theft Auto V</a>
+            <a class="dropdown-item" href="paginas/re4.html">Resident Evil 4</a>
+            <a class="dropdown-item" href="paginas/darksouls.html">Dark Souls</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="paginas/sobre.html">Sobre</a>
+        </li>
+      </ul>
+    </div>
+    </nav>
+<!-- Fim do menu Bootstrap -->
+
+      </header>
+        <!-- Conteúdo dentro da caixa preta (principal) -->
+      <main>
+        <!-- Artigos -->
+        <!-- Galeria -->
+        <section>
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+              <!-- Imagem 1 -->
+            <div class="carousel-item active">
+              <a href="paginas/cyberpunk.html"><img class="d-block w-100" src="./imagens/cyberpunk/3.jpg?auto=yes&bg=777&fg=555&text=CyberPunk 2077" alt="CyberPunk 2077"></a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>CyberPunk 2077</h5>
+                <p>Cyberpunk 2077 é um jogo de role-playing desenvolvido e publicado pela CD Projekt. O lançamento está programado para Microsoft Windows, PlayStation 4, Stadia e Xbox One em 17 de setembro de 2020.</p>
+              </div>
+            </div>
+              <!-- Imagem 2 -->
+            <div class="carousel-item">
+              <a href="paginas/skyrim.html"><img class="d-block w-100" src="./imagens/skyrim/5.jpg?auto=yes&bg=666&fg=444&text=The Elder Scrolls V: Skyrim" alt="The Elder Scrolls V: Skyrim"></a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>The Elder Scrolls V: Skyrim</h5>
+                <p>The Elder Scrolls V: Skyrim é um jogo de RPG de ação desenvolvido pela Bethesda Game Studios e publicado pela Bethesda Softworks.</p>
+              </div>
+            </div>
+              <!-- Imagem 3 -->
+            <div class="carousel-item">
+              <a href="paginas/re4.html"><img class="d-block w-100" src="imagens/re4/1.jpg?auto=yes&bg=555&fg=333&text=Resident Evil 4" alt="Resident Evil 4"></a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Resident Evil 4</h5>
+                <p>Resident Evil 4 é um jogo de terror de sobrevivência e tiro em terceira pessoa desenvolvido pela Capcom Production Studio 4 e publicado pela Capcom.</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
+        </div>
+        </section>
+
+        <section>
+          <div data-aos="zoom-out-left">
+            <h1 class="audiowide tituloInicio rosa">Jogos</h1>
+              <div class="descricao-jogo centralizar">
+                <p>Mais informações sobre outros jogos</p>
+              </div>
+          </div>
+
+          <!-- Cards -->
+          <div id="cardsInicios">
+            <div class="card-deck">
+              <div class="card bg-dark" data-aos="fade-up" data-aos-duration="350">
+                <a href="paginas/gtav.html"><img class="card-img-top" src="imagens/gtav/1.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                  <h5 class="card-title">Grand Theft Auto V</h5>
+                  <p class="card-text">Grand Theft Auto V é um jogo eletrônico de ação-aventura desenvolvido pela Rockstar North e publicado pela Rockstar Games.</p>
+                  <p class="card-text"><small class="text-muted">Mundo Aberto</small></p>
+                </div></a>
+              </div>
+              <div class="card bg-dark" data-aos="fade-up" data-aos-duration="700">
+                <a href="paginas/darksouls.html"><img class="card-img-top" src="imagens/darksouls/3.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                  <h5 class="card-title">Dark Souls</h5>
+                  <p class="card-text">Dark Souls é uma série de jogos de RPG de ação desenvolvidos pela FromSoftware.</p>
+                  <p class="card-text"><small class="text-muted">RPG de Ação</small></p>
+                </div></a>
+              </div>
+
+              <div class="card bg-dark" data-aos="fade-up" data-aos-duration="1050">
+                <a href="paginas/re4.html"><img class="card-img-top" src="imagens/re4/2.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                  <h5 class="card-title">Resident Evil 4</h5>
+                  <p class="card-text">Resident Evil 4 é um jogo de terror de sobrevivência e tiro em terceira pessoa desenvolvido pela Capcom Production Studio 4 e publicado pela Capcom.</p>
+                  <p class="card-text"><small class="text-muted">Tiro</small></p>
+                </div></a>
+              </div>
+            </div>
+          </div>
+          </section>
+
+          <section>
+            <article>
+              <!-- Redes sociais -->
+            <div data-aos="zoom-out-right">
+              <h1 class="audiowide tituloInicio verde">Redes Sociais</h1>
+                <div class="descricao-jogo centralizar">
+                  <p>Nos siga também nas redes sociais</p>
+                  <div class="social centralizar">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="imagens/fb.png" alt="Facebook" data-aos="zoom-out-left"></a>
+                    <a href="https://www.twitter.com/" target="_blank"><img src="imagens/tt.png" alt="Twitter" data-aos="zoom-out-left"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="imagens/inst.png" alt="Instagram" data-aos="zoom-out-left"></a>
+                    <a href="https://www.pinterest.com/" target="_blank"><img src="imagens/p.png" alt="Pinterest" data-aos="zoom-out-left"></a>
+                  </div>
+                </div>
+            </article>
+          </section>
+          <!-- Fim dos artigos -->
+
+
+      </main>
+      <!-- fim do conteúdo da caixa preta (principal) -->
+
+      <!-- Rodapé -->
+      <footer><a href="https://github.com/enricobguedes/unipsite" target="_blank">APS</a> | <strong>UNIP</strong><br>Todos os direitos reservados! © 2020</footer>
+
+    <!-- JS - Bootstrap -->
+    <script src="js/jquery/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/ajax/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script type="text/javascript">AOS.init();</script>
+  </body>
+</html>
